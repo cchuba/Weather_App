@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(255, 251, 239);
+}
+
+.currentForecast {
+  position: fixed;
+  top: 6em;
+  left: 20em;
+}
+
+.daily {
+  text-align: center;
+}
+
+.hourly {
+  text-align: center;
+}
+
+.currentLocation {
+  position: fixed;
+  top: 6em;
+  left: 5em;
+}
+
+.mainApp {
+  position: fixed;
+  left: 4em;
+  top: 13em;
+}
+
+.col {
+  border: solid;
+  padding: 7px;
+}
+
+img {
+  width: 200px;
+  position: relative;
+  left: 0;
+}
+
+.toggleSwitch {
+  display: inline-block;
+  position: fixed;
+  top: 2.4em;
+  left: 32em;
+}
+
+.location {
+  display: inline-block;
+  position: fixed;
+  top: 2.4em;
+  left: 30em;
+}
+
+.search {
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  top: 2em;
+  left: 15em;
+}
+
+.searchSubmit {
+  display: inline-block;
+  position: fixed;
+  top: 2em;
+  left: 25em;
+}
+
+.searchicon {
+  display: inline-block;
+  position: fixed;
+  top: 2.4em;
+  left: 23em;
+}
