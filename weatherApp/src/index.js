@@ -77,3 +77,6 @@ function getTemp(event) {
 }
 citySearch.addEventListener("submit", getUserCity);
 */
+
+// Link to my GitHub:
+// https://github.com/cchuba/Weather_App/tree/main/weatherApp
