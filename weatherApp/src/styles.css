@@ -3,7 +3,7 @@ body {
 }
 
 .currentForecast {
-  position: fixed;
+  text-align: center;
   top: 6em;
   left: 20em;
 }
