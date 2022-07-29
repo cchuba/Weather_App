@@ -12,7 +12,7 @@ body {
 }
 
 .mainApp {
-  position: fixed;
+  position: relative;
   margin: 0 auto;
 }
 
