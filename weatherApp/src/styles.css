@@ -24,8 +24,7 @@ body {
 
 .mainApp {
   position: fixed;
-  left: 4em;
-  top: 13em;
+  margin: 0 auto;
 }
 
 .col {
