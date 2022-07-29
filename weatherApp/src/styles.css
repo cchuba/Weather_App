@@ -20,7 +20,7 @@ top: 0.5em;
   margin: 0 auto;
   border: solid 1px #000 ;
   border-radius: 10px;
-  padding: 10px 10px 20px 10px;
+  padding: 20px 20px 30px 20px;
   text-align: center;
   box-shadow: 3px 3px 3px gray;
 
@@ -45,24 +45,21 @@ img {
 }
 
 .location {
-  display: inline-block;
-  position: fixed;
-  top: 2.4em;
-  left: 30em;
+  position: relative;
+  left: 10em;
+  bottom: 1.5em;
 }
 
 .search {
  margin: 0 auto;
- position: absolute;
+ position: relative;
  top: 0.5em;
- left: 30em;
+
 }
 
 .searchSubmit {
-  display: inline-block;
-  position: fixed;
-  top: 2em;
-  left: 25em;
+  position: relative;
+  top: .5em;
 }
 
 .searchicon {
