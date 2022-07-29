@@ -81,3 +81,7 @@ img {
   bottom: 0;
   text-align: center;
 }
+
+.date, .time{
+  text-align: center;
+}
