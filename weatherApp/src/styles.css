@@ -43,11 +43,7 @@ img {
 }
 
 .search {
-  display: block;
-  margin: 0 auto;
-  position: fixed;
-  top: 2em;
-  left: 15em;
+ 
 }
 
 .searchSubmit {
