@@ -3,21 +3,12 @@ body {
 }
 
 .currentForecast {
-  text-align: center;
-  top: 6em;
-  left: 20em;
+
 }
 
-.daily {
-  text-align: center;
-}
-
-.hourly {
-  text-align: center;
-}
 
 .currentLocation {
- text-align: center;
+ 
 }
 
 .mainApp {
