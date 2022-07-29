@@ -17,9 +17,7 @@ body {
 }
 
 .currentLocation {
-  position: fixed;
-  top: 6em;
-  left: 5em;
+ text-align: center;
 }
 
 .mainApp {
