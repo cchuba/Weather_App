@@ -2,19 +2,28 @@ body {
   background-color: rgb(255, 251, 239);
 }
 
-.currentForecast {
-
+.currentForecast{
+text-align: right;
+position:relative;
+top: 0.5em;
 }
 
 
 .currentLocation {
- 
+  text-align: center;
+  position: relative;
+  top: 1.7em;
 }
 
 .mainApp {
   position: relative;
   margin: 0 auto;
   border: solid 1px #000 ;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
+  box-shadow: 3px 3px 3px gray;
+
 }
 
 .col {
@@ -44,6 +53,9 @@ img {
 
 .search {
  margin: 0 auto;
+ position: absolute;
+ top: 0.5em;
+ left: 30em;
 }
 
 .searchSubmit {
@@ -68,5 +80,7 @@ img {
 }
 
 .date, .time{
-  text-align: center;
+  text-align: left;
+  position: relative;
+  top: -1.5em;
 }
