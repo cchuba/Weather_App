@@ -81,3 +81,8 @@ img {
   position: relative;
   top: -1.5em;
 }
+
+.col{
+  border-radius: 10px;
+  margin: 4px;
+}
