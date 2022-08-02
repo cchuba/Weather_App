@@ -47,6 +47,7 @@ let citySearch = document.querySelector(".searchForm");
 let locations = document.querySelector(".currentLocation");
 let cityInput = document.querySelector(".search");
 let cityText = cityInput.value;
+let h1 = document.querySelector("h1");
 
 function getUserCity(event) {
   let apiKey = "ff4a93d14dc8c81d12ed259ff88a5d9e";
@@ -64,6 +65,21 @@ function displayTemperature(response){
   curForecast.innerHTML = currentTemp;
 }
 
+function showGreeting() {
+            if (hours < 12){
+              
+            h1.innerHTML = `Good Morning!`;
+            }else if(hours >= 12 && hours < 18){
+            h1.innerHTML = `Good Afternoon!`;
+            } else if(hours >= 18 && hours<= 23){
+            h1.innerHTML = `Good Evening!`;
+            }else{
+              
+            h1.innerHTML = `Greetings!`;
+            }
+          
+        }
+showGreeting();
 
 
 
