@@ -2,6 +2,13 @@ body {
   background-color: rgb(255, 251, 239);
 }
 
+h1{
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  bottom: 1em;
+}
+
 .currentForecast{
 text-align: right;
 position:relative;
@@ -23,6 +30,8 @@ top: 0.5em;
   padding: 20px 20px 30px 20px;
   text-align: center;
   box-shadow: 3px 3px 3px gray;
+
+
 
 }
 
@@ -83,6 +92,7 @@ img {
 }
 
 .col{
+  text-decoration: underline;
   border-radius: 10px;
   margin: 4px;
 }
