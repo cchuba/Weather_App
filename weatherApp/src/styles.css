@@ -3,8 +3,13 @@ body {
 }
 
 h1{
+  background-color: aqua;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   position: relative;
   bottom: 1em;
 }
