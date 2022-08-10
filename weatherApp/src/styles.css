@@ -1,10 +1,10 @@
 body {
   background-color: rgb(255, 251, 239);
-  background-image: url("media/sky.jpg");
+  background-image: url("../media/sky.jpg");
 }
 
 h1{
-  background-color: aqua;
+  background-color: rgba(255, 255, 255, .5);
   border: solid 1px #fff;
   border-radius: 5px;
   width: 500px;
@@ -29,6 +29,7 @@ top: 0.5em;
 }
 
 .mainApp {
+  background-color: rgba(255, 255, 255, .75);
   position: relative;
   margin: 0 auto;
   border: solid 1px #000 ;
@@ -36,9 +37,9 @@ top: 0.5em;
   padding: 20px 20px 30px 20px;
   text-align: center;
   box-shadow: 3px 3px 3px gray;
-
-
-
+}
+.weatherIcon{
+  max-width: 50px;
 }
 
 .col {
