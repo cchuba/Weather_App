@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255, 251, 239);
+  background-image: url("media/sky.jpg");
 }
 
 h1{
@@ -41,8 +42,11 @@ top: 0.5em;
 }
 
 .col {
+  font-size: small;
   border: solid;
   padding: 7px;
+  border-radius: 10px;
+  margin: 4px;
 }
 
 img {
@@ -96,8 +100,8 @@ img {
   top: -1.5em;
 }
 
-.col{
-  text-decoration: underline;
-  border-radius: 10px;
-  margin: 4px;
+.weatherDetails{
+  list-style: none;
+  text-align: left;
+  padding: 0;
 }
