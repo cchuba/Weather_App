@@ -48,6 +48,7 @@ let locations = document.querySelector(".currentLocation");
 let cityInput = document.querySelector(".search");
 let cityText = cityInput.value;
 let h1 = document.querySelector("h1");
+let iconElement = document.querySelector("#icon");
 
 function getUserCity(event) {
   let apiKey = "ff4a93d14dc8c81d12ed259ff88a5d9e";
@@ -63,6 +64,7 @@ function displayTemperature(response){
   let currentTemp = response.data.main.temp;
   let curForecast = document.querySelector(".currentForecast");
   curForecast.innerHTML = currentTemp;
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
 }
 
 function showGreeting() {
@@ -80,6 +82,8 @@ function showGreeting() {
           
         }
 showGreeting();
+
+
 
 
 

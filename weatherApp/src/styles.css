@@ -38,7 +38,7 @@ top: 0.5em;
   text-align: center;
   box-shadow: 3px 3px 3px gray;
 }
-.weatherIcon{
+#icon{
   max-width: 50px;
 }
 
