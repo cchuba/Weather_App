@@ -59,30 +59,6 @@ function getUserCity(event) {
 }
 citySearch.addEventListener("submit", getUserCity);
 
-
-function displayTemperature(response){
-  let currentTemp = response.data.main.temp;
-  let curForecast = document.querySelector(".currentForecast");
-  curForecast.innerHTML = currentTemp;
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
-}
-
-function showGreeting() {
-            if (hours < 12){
-              
-            h1.innerHTML = `Good Morning!`;
-            }else if(hours >= 12 && hours < 18){
-            h1.innerHTML = `Good Afternoon!`;
-            } else if(hours >= 18 && hours<= 23){
-            h1.innerHTML = `Good Evening!`;
-            }else{
-              
-            h1.innerHTML = `Greetings!`;
-            }
-          
-        }
-showGreeting();
-
 function displayForecast(){
   let forecastElement = document.querySelector(".forecastRow");
   let forecastHTML = `<div class="row">`;
@@ -109,6 +85,32 @@ function displayForecast(){
   forecastElement.innerHTML = forecastHTML;
 }
 displayForecast();
+
+function displayTemperature(response){
+  let currentTemp = response.data.main.temp;
+  let curForecast = document.querySelector(".currentForecast");
+  curForecast.innerHTML = currentTemp;
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
+}
+
+
+function showGreeting() {
+            if (hours < 12){
+              
+            h1.innerHTML = `Good Morning!`;
+            }else if(hours >= 12 && hours < 18){
+            h1.innerHTML = `Good Afternoon!`;
+            } else if(hours >= 18 && hours<= 23){
+            h1.innerHTML = `Good Evening!`;
+            }else{
+              
+            h1.innerHTML = `Greetings!`;
+            }
+          
+        }
+showGreeting();
+
+
 
 
 
