@@ -46,8 +46,10 @@ top: 0.5em;
   font-size: small;
   border: solid;
   padding: 7px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0 auto;
+  width: 125px;
+  height: 160px;
 }
 
 
