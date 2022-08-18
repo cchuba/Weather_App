@@ -83,6 +83,32 @@ function showGreeting() {
         }
 showGreeting();
 
+function displayForecast(){
+  let forecastElement = document.querySelector(".forecastRow");
+  let forecastHTML = `<div class="row">`;
+  let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  daysOfWeek.forEach(function (day){
+    forecastHTML = forecastHTML + `
+          <div class="forecastColumn">
+            <div class="forecastDay">${day}</div>
+            <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" id="icon">
+            <ul class = "weatherDetails">
+              <li>
+                Precipitation:
+              </li>
+              <li>
+                Humidity:
+              </li>
+              <li>
+                Wind:
+              </li>
+            </ul>
+        </div>`;
+  });
+  forecastHTML = forecastHTML + "</div>";
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
 
 
 

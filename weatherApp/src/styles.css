@@ -42,13 +42,14 @@ top: 0.5em;
   max-width: 50px;
 }
 
-.col {
+.forecastColumn{
   font-size: small;
   border: solid;
   padding: 7px;
-  border-radius: 10px;
-  margin: 4px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
+
 
 img {
   width: 200px;
