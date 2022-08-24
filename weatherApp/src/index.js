@@ -15,6 +15,7 @@ let days = [
 ];
 let minutes = now.getMinutes();
 let hours = now.getHours();
+let newHours = hours%12;
 let month = now.getMonth();
 let months = [
   "January",
@@ -36,7 +37,7 @@ let dateh5 = document.querySelector(".date");
 let timeh5 = document.querySelector(".time");
 function displayDate() {
   dateh5.innerHTML = `${days[day]}, ${months[month]} ${date}, ${year}`;
-  timeh5.innerHTML = `${hours}:${minutes}:${seconds}`;
+  timeh5.innerHTML = `${newHours}:${minutes}:${seconds}`;
 }
 
 displayDate();
@@ -49,15 +50,25 @@ let cityInput = document.querySelector(".search");
 let cityText = cityInput.value;
 let h1 = document.querySelector("h1");
 let iconElement = document.querySelector("#icon");
+let degreeSymbol = "°";
 
 function getUserCity(event) {
   let apiKey = "ff4a93d14dc8c81d12ed259ff88a5d9e";
-  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}`;
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=imperial`;
   event.preventDefault();
   locations.innerHTML = cityInput.value;
   axios.get(apiURL).then(displayTemperature);
 }
 citySearch.addEventListener("submit", getUserCity);
+
+
+
+function displayTemperature(response){
+  let currentTemp = response.data.main.temp;
+  let curForecast = document.querySelector(".currentForecast");
+  curForecast.innerHTML = Math.round(currentTemp);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
+}
 
 function displayForecast(){
   let forecastElement = document.querySelector(".forecastRow");
@@ -67,7 +78,7 @@ function displayForecast(){
     forecastHTML = forecastHTML + `
           <div class="forecastColumn">
             <div class="forecastDay">${day}</div>
-            <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" id="icon">
+           <div id="icon"> <img src=" " alt="" > </div>
             <ul class = "weatherDetails">
               <li>
                 Precipitation:
@@ -85,14 +96,6 @@ function displayForecast(){
   forecastElement.innerHTML = forecastHTML;
 }
 displayForecast();
-
-function displayTemperature(response){
-  let currentTemp = response.data.main.temp;
-  let curForecast = document.querySelector(".currentForecast");
-  curForecast.innerHTML = currentTemp;
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
-}
-
 
 function showGreeting() {
             if (hours < 12){
