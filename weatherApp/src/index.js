@@ -70,11 +70,11 @@ function displayTemperature(response){
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`);
 }
 
-function displayForecast(){
+function displayForecast(response){
+  console.log(response);
   let forecastElement = document.querySelector(".forecastRow");
   let forecastHTML = `<div class="row">`;
-  let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-  daysOfWeek.forEach(function (day){
+  days.forEach(function (day){
     forecastHTML = forecastHTML + `
           <div class="forecastColumn">
             <div class="forecastDay">${day}</div>
